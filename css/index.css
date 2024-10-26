@@ -317,6 +317,7 @@ ul{
 
 .card_price del{
    color: var(--color-dark-2);
+   font-size: 1.2rem;
 }
 
 .card_ratings{
@@ -342,4 +343,31 @@ ul{
     color: var(--color-withe-1);
     padding: 1.4rem 3rem;
     border-radius: 0.5rem;
+}
+
+/* categories */
+
+.categories{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 2rem;
+}
+
+.category{
+    text-align: center;
+    padding: 3rem;
+    border: 2px solid var(--color-withe-2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.category:hover{
+    background-color: var(--color-primary);
+}
+
+.category_icon{
+    width: 3.5rem;
+    height: auto;
 }
