@@ -417,8 +417,8 @@ ul{
     color: var(--color-withe-1);
     padding: 1rem 2rem;
     border-radius: 0.2rem;
+    font-size: 1.5rem;
 }
-
 
 .trending_countdown {
     display: flex;
@@ -448,3 +448,19 @@ ul{
     font-size: 1rem;
     font-weight: bold;
   }
+
+  /* products start */
+
+  .products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .new_card_tag{
+    background-color: var(--color-green);
+  }
+
+  /* products end */
