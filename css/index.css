@@ -51,6 +51,10 @@ ul {
     fill: goldenrod;
 }
 
+.no_start{
+    color: var(--color-dark-2);
+}
+
 /* swiper slide */
 
 .swiper {
@@ -356,6 +360,7 @@ ul {
 
 .card_ratings {
     display: flex;
+    align-items: center;
 }
 
 .card_stars {
@@ -378,6 +383,17 @@ ul {
     padding: 1.2rem 1.5rem;
     border-radius: 0.5rem;
     font-size: 1.5rem;
+}
+
+.add_to_cart{
+    padding: 1rem 2rem;
+    background-color: var(--color-dark-1);
+    color: var(--color-withe-1);
+    cursor: pointer;
+    border: none;
+    outline: none;
+   width: 100%;
+   border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
 /* categories */
@@ -681,7 +697,7 @@ ul {
 
 .cart_item{
     margin-top: 2rem;
-    padding: 1.5rem;
+    padding: 0rem 1rem;
     background-color: var(--color-withe-2);
     display: flex;
     justify-content: space-between;
@@ -704,7 +720,7 @@ ul {
 }
 
 .cart_item_title{
-    padding-left: 4.5rem;
+    padding-left: 5rem;
 }
 
 /* responsive  part  */

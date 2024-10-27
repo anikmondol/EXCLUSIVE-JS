@@ -145,3 +145,40 @@ const mobile_nav = document.querySelector(".mobile_nav");
 hamburger.addEventListener("click", e =>{
   mobile_nav.classList.toggle("mobile_nav_hind");
 });
+
+
+
+
+const addToCarts = document.querySelectorAll(".add_to_cart");
+
+addToCarts.forEach(button => {
+ 
+  button.addEventListener("click", e =>{
+   const id = button.getAttribute("date-id");
+   const title = button.getAttribute("date-title");
+   const image = button.getAttribute("date-image");
+   const price = button.getAttribute("data-price");
+
+   const cartItem = {id, title, image, price};
+
+   const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+   
+   const itemExists = cart.some(item => item.id === id);
+
+   if (!itemExists) {
+    
+     alert("Do You Wont Add To Cart")
+     cart.push(cartItem);
+  
+  
+     localStorage.setItem('cart', JSON.stringify(cart));
+   } else {
+     alert(`Item with ID ${id} is already in the cart.`);
+   }
+
+   
+    
+  })
+  
+});
