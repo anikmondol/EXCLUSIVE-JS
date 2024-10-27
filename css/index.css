@@ -540,3 +540,19 @@ ul{
     grid-row-start: 5;
     grid-row-end: 9;
   } 
+
+  /* services */
+
+  .services_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  }
+
+  .service{
+    text-align: center;
+  }
+
+  .service_title{
+    margin: 1.5rem 0rem;
+  }
