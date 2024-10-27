@@ -620,7 +620,7 @@ ul {
 
 .footer_copy {
     text-align: center;
-    color: var(--color-withe-2);
+    color: var(--color-dark-2);
     padding: 2rem 0rem;
     font-size: 1.1rem;
     border-top: 1px solid var(--color-dark-2);
