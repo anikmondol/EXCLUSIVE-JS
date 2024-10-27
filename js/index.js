@@ -36,20 +36,33 @@ let x = setInterval(function () {
 // swiper-slide
 
 var swiper = new Swiper(".mySwiper", {
-  loop: true,
+    loop: true,
   freeMode: true,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
   },
-  slidesPerView: 4,
-  spaceBetween: 30,
+  slidesPerView: 2,
+  spaceBetween: 10,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+  },
 });
-
 
 // trending countdown
 
@@ -122,4 +135,13 @@ ScrollReveal().reveal(".footer", {
   opacity: 0,
   duration: 900,
   delay: 100,
+});
+
+
+//mobile nav 
+const hamburger = document.querySelector(".hamburger");
+const mobile_nav = document.querySelector(".mobile_nav");
+
+hamburger.addEventListener("click", e =>{
+  mobile_nav.classList.toggle("mobile_nav_hind");
 });
