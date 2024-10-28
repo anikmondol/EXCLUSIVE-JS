@@ -798,15 +798,42 @@ ul {
     color: var(--color-withe-1);
     width: 100%;
     display: inline-block;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     font-size: 1.5rem;
     border-radius: 0.5rem;
+    transition-duration: 1s;
 }
 
 .form_btn:hover{
     background-color: var(--color-dark-2);
     transition-duration: 1s;
+}
+
+/* login page */
+
+.form_login{
+    padding: 1.3rem;
+    background-color: var(--color-primary);
+    color: var(--color-withe-1);
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    transition-duration: 1s;
+}
+
+.form_login:hover{
+    background-color: var(--color-dark-2);
+    transition-duration: 1s;
+}
+
+.form_forgets, .from_login{
+    text-decoration: underline;
 }
 
 /* responsive  part  */
