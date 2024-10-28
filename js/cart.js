@@ -36,6 +36,15 @@ ScrollReveal().reveal(".footer", {
 });
 
 
+//user toggle 
+const toggle_icon = document.querySelector(".toggle_icon");
+const user_toggle = document.querySelector(".user_toggle");
+
+toggle_icon.addEventListener("click", e =>{
+  user_toggle.classList.toggle("user_toggle_hind");
+});
+
+
 
 //mobile nav 
 const hamburger = document.querySelector(".hamburger");

@@ -176,12 +176,12 @@ addToCarts.forEach(button => {
 
 
 //user toggle 
-const toggle_icon = document.querySelector(".toggle_icon");
-const user_toggle = document.querySelector(".user_toggle");
+// const toggle_icon = document.querySelector(".toggle_icon");
+// const user_toggle = document.querySelector(".user_toggle");
 
-toggle_icon.addEventListener("click", e =>{
-  user_toggle.classList.toggle("user_toggle_hind");
-});
+// toggle_icon.addEventListener("click", e =>{
+//   user_toggle.classList.toggle("user_toggle_hind");
+// });
 
 
 
@@ -194,46 +194,51 @@ hamburger.addEventListener("click", e =>{
 });
 
 
-const cartItems = document.querySelector(".cart_items");
-const cart_total_p = document.querySelector(".cart_total_p");
+// const cartItems = document.querySelector(".cart_items");
+// const cart_total_p = document.querySelector(".cart_total_p");
 
 
-function displayCartItems() {
-    const items = JSON.parse(localStorage.getItem('cart')) || [];
-    let sum = 0;
+// function displayCartItems() {
+//     const items = JSON.parse(localStorage.getItem('cart')) || [];
+//     let sum = 0;
 
-    cartItems.innerHTML = ""; // Clear existing items to prevent duplicates
+//     console.log(cartItems);
 
-    items.forEach((item, index) => {
-        const cartItem = document.createElement("div");
-        cartItem.classList = "cart_item";
-        cartItem.innerHTML = `
-            <span class="cart_item_id hidden">${item.id}</span>
-            <p class="cart_item_title">${item.title}</p>
-            <img src="${item.image}" alt="${item.title}" class="cart_img">
-            <p class="cart_item_subtotal">$${item.price}</p>
-            <button class="cart_item_delete">Delete</button>
-        `;
+//     cartItems.textContent = ""; // Clear existing items to prevent duplicates
 
-        // Add delete functionality to the button
-        cartItem.querySelector(".cart_item_delete").addEventListener("click", () => {
-            deleteCartItem(index); // Call function to delete item by index
-        });
+ 
+    
 
-        cartItems.appendChild(cartItem);
-        sum += parseFloat(item.price); // Sum up item prices
-    });
+//     items.forEach((item, index) => {
+//         const cartItem = document.createElement("div");
+//         cartItem.classList = "cart_item";
+//         cartItem.innerHTML = `
+//             <span class="cart_item_id hidden">${item.id}</span>
+//             <p class="cart_item_title">${item.title}</p>
+//             <img src="${item.image}" alt="${item.title}" class="cart_img">
+//             <p class="cart_item_subtotal">$${item.price}</p>
+//             <button class="cart_item_delete">Delete</button>
+//         `;
 
-    cart_total_p.innerHTML = `<strong>Total: </strong>$${sum.toFixed(2)}`;
-}
+//         // Add delete functionality to the button
+//         cartItem.querySelector(".cart_item_delete").addEventListener("click", () => {
+//             deleteCartItem(index); // Call function to delete item by index
+//         });
 
-function deleteCartItem(index) {
-    alert("Do You Delete Date");
-    const items = JSON.parse(localStorage.getItem('cart')) || [];
-    items.splice(index, 1); 
-    localStorage.setItem('cart', JSON.stringify(items));
+//         cartItems.appendChild(cartItem);
+//         sum += parseFloat(item.price); // Sum up item prices
+//     });
 
-    displayCartItems(); 
-}
+//     cart_total_p.innerHTML = `<strong>Total: </strong>$${sum.toFixed(2)}`;
+// }
 
-displayCartItems();
+// function deleteCartItem(index) {
+//     alert("Do You Delete Date");
+//     const items = JSON.parse(localStorage.getItem('cart')) || [];
+//     items.splice(index, 1); 
+//     localStorage.setItem('cart', JSON.stringify(items));
+
+//     displayCartItems(); 
+// }
+
+// displayCartItems();
