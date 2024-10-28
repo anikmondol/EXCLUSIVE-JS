@@ -186,6 +186,14 @@ hamburger.addEventListener("click", e =>{
 });
 
 
+//mobile nav 
+const toggle_icon = document.querySelector(".toggle_icon");
+const user_toggle = document.querySelector(".user_toggle");
+
+toggle_icon.addEventListener("click", e =>{
+  user_toggle.classList.toggle("user_toggle_hind");
+});
+
 const cartItems = document.querySelector(".cart_items");
 const cart_total_p = document.querySelector(".cart_total_p");
 
