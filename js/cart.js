@@ -48,28 +48,43 @@ hamburger.addEventListener("click", e =>{
 const cartItems = document.querySelector(".cart_items");
 const cart_total_p = document.querySelector(".cart_total_p");
 
+
 function displayCartItems() {
-    const items = JSON.parse(localStorage.getItem('cart')) || []; // Handle case where cart is empty
+    const items = JSON.parse(localStorage.getItem('cart')) || [];
     let sum = 0;
 
-    items.forEach(item => { 
+    cartItems.innerHTML = ""; // Clear existing items to prevent duplicates
+
+    items.forEach((item, index) => {
         const cartItem = document.createElement("div");
         cartItem.classList = "cart_item";
         cartItem.innerHTML = `
-            <span class="cart_item_id">${item.id}</span>
+            <span class="cart_item_id hidden">${item.id}</span>
             <p class="cart_item_title">${item.title}</p>
             <img src="${item.image}" alt="${item.title}" class="cart_img">
             <p class="cart_item_subtotal">$${item.price}</p>
-            <p class="cart_item_delete">Delete</p>
+            <button class="cart_item_delete">Delete</button>
         `;
-        cartItems.appendChild(cartItem);
 
-        // Ensure the price is treated as a number and add to sum
-        sum += parseFloat(item.price);
+        // Add delete functionality to the button
+        cartItem.querySelector(".cart_item_delete").addEventListener("click", () => {
+            deleteCartItem(index); // Call function to delete item by index
+        });
+
+        cartItems.appendChild(cartItem);
+        sum += parseFloat(item.price); // Sum up item prices
     });
 
-    // Update total price display
-    cart_total_p.innerText = `$${sum.toFixed(2)}`;
+    cart_total_p.innerHTML = `<strong>Total: </strong>$${sum.toFixed(2)}`;
+}
+
+function deleteCartItem(index) {
+    alert("Do You Delete Date");
+    const items = JSON.parse(localStorage.getItem('cart')) || [];
+    items.splice(index, 1); 
+    localStorage.setItem('cart', JSON.stringify(items));
+
+    displayCartItems(); 
 }
 
 displayCartItems();
