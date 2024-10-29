@@ -1,20 +1,29 @@
-//user toggle 
-const toggle_icon = document.querySelector(".toggle_icon");
-const user_toggle = document.querySelector(".user_toggle");
+ // Get the navbar element
+ const navbar = document.querySelector(".nav");
+ const toggle = document.querySelector(".toggle_icon");
+ const nav_form = document.querySelector(".nav_form");
 
-toggle_icon.addEventListener("click", e =>{
-  user_toggle.classList.toggle("user_toggle_hind");
-});
+ // Get the offset position of the navbar
+ const sticky = navbar.offsetTop + 200;
 
-
-
-//mobile nav 
-const hamburger = document.querySelector(".hamburger");
-const mobile_nav = document.querySelector(".mobile_nav");
-
-hamburger.addEventListener("click", e =>{
-  mobile_nav.classList.toggle("mobile_nav_hind");
-});
+ // Add the sticky class to the navbar when you reach its scroll position
+ // Remove the sticky class when you leave the scroll position
+ function stickyNavbar() {
+    //  console.log(window.pageYOffset);
+     if (window.pageYOffset >= sticky) {
+         navbar.classList.add("sticky");
+         toggle.classList.add("none");
+         nav_form.classList.add("white");
+     } else {
+         navbar.classList.remove("sticky");
+         toggle.classList.remove("none");
+         nav_form.classList.remove("white");
+     }
+ }
+ // When the user scrolls the page, execute stickyNavbar
+ window.onscroll = function() {
+     stickyNavbar();
+ };
 
 
 // countdown
@@ -188,9 +197,20 @@ addToCarts.forEach(button => {
      alert(`Item with ID ${id} is already in the cart.`);
    }
 
-    
   })
   
+});
+
+
+
+
+
+//mobile nav 
+const hamburger = document.querySelector(".hamburger");
+const mobile_nav = document.querySelector(".mobile_nav");
+
+hamburger.addEventListener("click", e =>{
+  mobile_nav.classList.toggle("mobile_nav_hind");
 });
 
 

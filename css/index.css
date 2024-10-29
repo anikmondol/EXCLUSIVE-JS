@@ -66,6 +66,16 @@ ul {
     font-weight: 600;
 }
 
+.cart_count{
+    position: relative;
+    top: -2rem;
+    right: 0.5rem;
+    font-size: 1rem;
+    z-index: 44;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+}
 
 /* swiper slide */
 
@@ -92,6 +102,7 @@ ul {
     height: 4rem;
     width: 100%;
 }
+
 
 .top_nav_container {
     width: 100%;
@@ -124,11 +135,30 @@ ul {
 
 .nav {
     width: 100%;
-    height: 8rem;
+    height: 7.5rem;
     border: 1px solid var(--color-dark-2);
     border-left: none;
     border-right: none;
 }
+
+.sticky{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 20px;
+    z-index: 200;
+    box-shadow: 0px 0px 5px 0px var(--color-dark-1);
+    background-color: var(--color-withe-2);
+}
+
+.none{
+    display: none;
+}
+
+.white{
+    border: 1px solid var(--color-dark-1);
+}
+
 
 .nav_container {
     width: 100%;
@@ -736,6 +766,10 @@ ul {
     padding: 2rem 0rem;
     font-size: 1.1rem;
     border-top: 1px solid var(--color-dark-2);
+}
+
+.footer_list_item a {
+    color: var(--color-withe-1);
 }
 
 
@@ -1657,6 +1691,35 @@ ul {
 
 @media only screen and (max-width: 800px) {
 
+
+    .mobile_nav {
+        background-color: var(--color-withe-1);
+        position: absolute;
+        z-index: 99;
+        height: 70vh;
+        border-right: 1px solid var(--color-withe-2);
+        transition: all 5s ease;
+    }
+
+
+    .sticky{
+        position: static;
+        top: 0px;
+        left: 0px;
+        right: 20px;
+        z-index: 200;
+        box-shadow: 0px 0px 5px 0px var(--color-dark-1);
+        background-color: var(--color-withe-2);
+    }
+    
+    .none{
+        display: none;
+    }
+    
+    .white{
+        border: 1px solid var(--color-dark-1);
+    }
+
     .section {
         margin-top: 6rem;
     }
@@ -1961,11 +2024,18 @@ ul {
 
 }
 
-
 }
 
 @media only screen and (max-width: 767px) {
 
+    .mobile_nav {
+        background-color: var(--color-withe-1);
+        position: absolute;
+        z-index: 99;
+        height: 50vh;
+        border-right: 1px solid var(--color-withe-2);
+        transition: all 5s ease;
+    }
 
     /* gallery */
 
@@ -2218,5 +2288,24 @@ ul {
         display: flex;
         gap: 1.7rem;
     }
+
+    .sticky{
+        position: static;
+        top: 0px;
+        left: 0px;
+        right: 20px;
+        z-index: 200;
+        box-shadow: 0px 0px 5px 0px var(--color-dark-1);
+        background-color: var(--color-withe-2);
+    }
+    
+    .none{
+        display: none;
+    }
+    
+    .white{
+        border: 1px solid var(--color-dark-1);
+    }
+    
 
 }
