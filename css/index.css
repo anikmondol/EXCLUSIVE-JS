@@ -1403,6 +1403,7 @@ ul {
 
 /* product details */
 
+
 .product_details_container {
     display: flex;
     gap: 2rem;
@@ -1938,6 +1939,27 @@ ul {
         padding-bottom: 2rem;
     }
 
+    /* product details */
+
+    .product_details_container{
+        flex-direction: column;
+    }
+
+    
+
+.product_details_content {
+    width: 100%;
+}
+
+.product_details_images {
+    width: 100%;
+}
+
+.main_image img {
+    object-fit: cover;
+    height: 25rem;
+
+}
 
 
 }
