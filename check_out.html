@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account - Exclusive E-Commerce-Website</title>
+    <title>Home - Exclusive E-Commerce-Website</title>
 
     <!-- scroll reveal file link -->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -82,7 +82,8 @@
 
     <div class="user_toggle user_toggle_hind">
         <ul class="user_toggle_list">
-            <li class="user_toggle_item"><i class="fa-regular fa-user"></i> <a href="/account.html" class="user_toggle_link">Manage
+            <li class="user_toggle_item"><i class="fa-regular fa-user"></i> <a href="/account.html"
+                    class="user_toggle_link">Manage
                     My Account</a></li>
             <li class="user_toggle_item"><i class="fa-solid fa-bag-shopping"></i> <a href="#"
                     class="user_toggle_link">My Order</a></li>
@@ -100,80 +101,104 @@
     <!-- mark to links start -->
 
     <section class="section footer_hide">
-        <div class="container account_mark_links mark_to_links">
-            <p>Home / <strong>My Account</strong></p>
-            <p>Welcome! <span class="user_name">Anik Mondal</span></p>
+        <div class="container mark_to_links">
+            <p>Account / My Account / Product / View Cart / <strong>CheckOut</strong></p>
         </div>
     </section>
 
     <!-- mark to links start -->
 
-    <!--account start -->
+    <!-- check_out start -->
 
     <section class="section">
-        <div class="container account_container">
-            <div class="account_content">
-                <div class="manage">
-                    <h3>Manage My Account</h3>
-                    <ul class="manage_links_list">
-                        <li class="manage_link "><a class="pro_red" href="">My Profile</a></li>
-                        <li class="manage_link"><a href="">Address Book</a></li>
-                        <li class="manage_link"><a href="">My Payment Options</a></li>
-                    </ul>
-                </div>
-                <div class="manage">
-                    <h3>My Orders</h3>
-                    <ul class="manage_links_list">
-                        <li class="manage_link"><a href="">My Returns</a></li>
-                        <li class="manage_link"><a href="">My Cancellations</a></li>
-                    </ul>
-                </div>
-                <div class="manage footer_hide">
-                    <h3>My WishList</h3>
-                    <ul class="manage_links_list">
-                        <li class="manage_link "><a class="pro_red" href=""></a></li>
-                        <li class="manage_link"><a href=""></a></li>
-                        <li class="manage_link"><a href=""></a></li>
-                    </ul>
-                </div>
+        <div class="container check_out_container">
+            <div class="check_out_form">
+                <h3>Billing Details</h3>
+                <from class="form_container">
+                    <div class="check_out_input_date">
+                        <label for="first_name">First Name*</label>
+                        <input type="text" id="first_name">
+                    </div>
+                    <div class="check_out_input_date">
+                        <label for="company_name">Company Name</label>
+                        <input type="text" id="company_name">
+                    </div>
+                    <div class="check_out_input_date">
+                        <label for="Street_address">Street Address*</label>
+                        <input type="text" id="Street_address">
+                    </div>
+                    <div class="check_out_input_date">
+                        <label for="apartment">Apartment, floor, etc. (optional)</label>
+                        <input type="text" id="apartment">
+                    </div>
+                    <div class="check_out_input_date">
+                        <label for="town_City">Town/City*</label>
+                        <input type="text" id="town_City">
+                    </div>
+                    <div class="check_out_input_date">
+                        <label for="Phone_number">First Name*</label>
+                        <input type="text" id="Phone_number">
+                    </div>
+                    <div class="check_out_input_date">
+                        <label for="email_address">First Name*</label>
+                        <input type="text" id="email_address">
+                    </div>
+                    <div class="check_out_input_date check_input">
+                        <input type="checkbox" name="" id="check_box">
+                        <p>Save this information for faster check-out next time</p>
+                    </div>
+
+                </from>
             </div>
-            <div class="account_form">
-                <h3>Edit Your Profile</h3>
-                <form action="#" class="accont_form_date">
-                    <div class="account_input_group">
-                        <div class="account_input_date">
-                            <label for="first_name">First Name</label>
-                            <input type="text" id="first_name" placeholder="Anik">
+            <div class="check_out_content">
+                <div class="check_out_img_date">
+                    <div>
+                        <img src="image/bank/item-1.png" alt="" class="check_out">
+                        <p class="check_title">LCD Monitor</p>
+                    </div>
+                    <p class="check_price">$200</p>
+                </div>
+                <div class="check_out_img_date">
+                    <div>
+                        <img src="image/bank/igem-2.png" alt="" class="check_out">
+                        <p class="check_title">LCD Monitor</p>
+                    </div>
+                    <p class="check_price">$200</p>
+                </div>
+                <div class="sub">
+                    <p class="price_header">Subtotal:</p>
+                    <p class="check_price">$1750</p>
+                </div>
+                <div class="shi">
+                    <p class="price_header">Shipping:</p>
+                    <p class="check_price">Free</p>
+                </div>
+                <div class="bank">
+                    <div class="bank_check_with_img">
+                        <div>
+                            <input type="radio" name="" id=""> <span  class="price_header">Bank</span>
                         </div>
-                        <div class="account_input_date">
-                            <label for="first_name">Last Name</label>
-                            <input type="text" id="first_name" placeholder="Mondal">
-                        </div>
-                        <div class="account_input_date">
-                            <label for="first_name">Email</label>
-                            <input type="text" id="first_name" placeholder="abc@gmil.com">
-                        </div>
-                        <div class="account_input_date">
-                            <label for="first_name">Address</label>
-                            <input type="text" id="first_name" placeholder="Dhaka, Bangladesh">
+                        <div class="bank_img_container">
+                            <img src="image/bank/image 32.png" alt="">
+                            <img src="image/bank/Mastercard.png" alt="">
+                            <img src="image/bank/Nagad.png" alt="">
+                            <img src="image/bank/Visa.png" alt="">
                         </div>
                     </div>
-                    <div class="password_change">
-                        <label>Password Changes</label>
-                        <input class="input_pass" type="password" name="" id="" placeholder="Current Password">
-                        <input  class="input_pass" type="password" name="" id=""  placeholder="New Password">
-                        <input  class="input_pass" type="password" name="" id=""  placeholder="Confirm Password">
+                    <div class="cash">
+                        <input type="radio" name="" id=""> <span  class="price_header">Cash on delivery</span>
                     </div>
-                    <div class="password_btn_container">
-                        <button class="cancel">Cancel</button>
-                        <button class="save">Save Changes</button>
+                    <div class="check_out_buttons">
+                        <input type="text" placeholder="Coupon Code" style="color: white;">
+                        <button class="apply_btn">Apply Coupon</button>
                     </div>
-                </form>
+                    <button class="order_btn">Place Order</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- account end -->
+    <!-- check_out end -->
 
 
 
