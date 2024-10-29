@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Exclusive E-Commerce-Website</title>
+
+    <!-- scroll reveal file link -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- font awesome css links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- connect the css file -->
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+
+    <!-- top navbar start -->
+    <div class="top_nav">
+        <div class="container top_nav_container">
+            <div class="top_nav_wrapper">
+                <p class="top_nav_p">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+                <a href="#" class="top_nav_link">SHOW NOW</a>
+            </div>
+        </div>
+    </div>
+    <!-- top navbar start -->
+
+    <!-- navbar start -->
+
+    <nav class="nav">
+        <div class="container nav_container">
+            <a href="/" class="nav_logo">EXCLUSIVE</a>
+            <ul class="nav_list">
+                <li class="nav_item"><a href="/" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="/contact.html" class="nav_link">Contact</a></li>
+                <li class="nav_item"><a href="/about.html" class="nav_link">About</a></li>
+                <li class="nav_item"><a href="/sing-up.html" class="nav_link">Sign Up</a></li>
+            </ul>
+            <div class="nav_items">
+                <form action="#" class="nav_form">
+                    <input type="text" class="nav_input" placeholder="search here...">
+                    <img src="image/search.png" alt="exclusive image coming son" class="nav_search">
+                </form>
+                <img src="image/heart.png" alt="exclusive image coming son" class="nav_heart">
+                <a href="/cart.html"> <img src="image/cart.png" alt="exclusive image coming son" class="nav_cart"></a>
+                <span class="user_icon toggle_icon"><i class="fa-regular fa-user"></i></span>
+            </div>
+            <span class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+
+    <!-- mobile device start -->
+
+    <nav class="mobile_nav mobile_nav_hind">
+        <ul class="mobile_nav_list">
+            <li class="mobile_nav_item"><a href="/" class="mobile_nav_link">Home</a></li>
+            <li class="mobile_nav_item"><a href="/contact.html" class="mobile_nav_link">Contact</a></li>
+            <li class="mobile_nav_item"><a href="/about.html" class="mobile_nav_link">About</a></li>
+            <li class="mobile_nav_item"><a href="/sing-up.html" class="mobile_nav_link">Sign Up</a></li>
+            <li class="mobile_nav_item"><a href="/cart.html" class="mobile_nav_link">Cart</a></li>
+        </ul>
+    </nav>
+
+    <!-- mobile device end -->
+
+    <!-- user toggle start -->
+
+    <div class="user_toggle user_toggle_hind">
+        <ul class="user_toggle_list">
+            <li class="user_toggle_item"><i class="fa-regular fa-user"></i> <a href="/account.html"
+                    class="user_toggle_link">Manage
+                    My Account</a></li>
+            <li class="user_toggle_item"><i class="fa-solid fa-bag-shopping"></i> <a href="#"
+                    class="user_toggle_link">My Order</a></li>
+            <li class="user_toggle_item"><i class="fa-solid fa-xmark"></i> <a href="#" class="user_toggle_link">My
+                    Cancellations</a></li>
+            <li class="user_toggle_item"><i class="fa-regular fa-star"></i> <a href="#" class="user_toggle_link">My
+                    Reviews</a></li>
+            <li class="user_toggle_item"><i class="fa-solid fa-right-to-bracket"></i> <a href="#"
+                    class="user_toggle_link">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- user toggle end -->
+
+    <!-- mark to links start -->
+
+    <section class="section footer_hide">
+        <div class="container mark_to_links">
+            <p>Account / Gaming / <strong>View Havic HV G-92 Gamepad </strong></p>
+        </div>
+    </section>
+
+    <!-- mark to links start -->
+
+    <!-- product_details start -->
+
+    <section class="section">
+        <div class="container product_details_container">
+            <div class="product_details_images">
+                <div class="main_image">
+                    <img id="mainImage" src="image/items/item-1.png" alt="">
+                </div>
+                <div class="side_bar_images">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card_top details_image">
+                                        <img src="image/items/item-1.png" alt="exclusive image coming son"
+                                            class="card_img" onclick="changeMainImage(this)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card_top details_image">
+                                        <img src="image/items/item-2.png" alt="exclusive image coming son"
+                                            class="card_img" onclick="changeMainImage(this)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card_top details_image">
+                                        <img src="image/items/item-3.png" alt="exclusive image coming son"
+                                            class="card_img" onclick="changeMainImage(this)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card_top details_image">
+                                        <img src="image/items/item-4.png" alt="exclusive image coming son"
+                                            class="card_img" onclick="changeMainImage(this)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card_top details_image">
+                                        <img src="image/items/item-5.png" alt="exclusive image coming son"
+                                            class="card_img" onclick="changeMainImage(this)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card_top details_image">
+                                        <img src="image/items/item-6.png" alt="exclusive image coming son"
+                                            class="card_img" onclick="changeMainImage(this)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card_top details_image">
+                                        <img src="image/items/item-7.png" alt="exclusive image coming son"
+                                            class="card_img" onclick="changeMainImage(this)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card_top details_image">
+                                        <img src="image/items/item-8.png" alt="exclusive image coming son"
+                                            class="card_img" onclick="changeMainImage(this)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card_top details_image">
+                                        <img src="image/items/item-9.png" alt="exclusive image coming son"
+                                            class="card_img" onclick="changeMainImage(this)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card_top details_image">
+                                        <img src="image/items/item-10.png" alt="exclusive image coming son"
+                                            class="card_img" onclick="changeMainImage(this)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card_top details_image">
+                                        <img src="image/items/item-11.png" alt="exclusive image coming son"
+                                            class="card_img" onclick="changeMainImage(this)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card_top details_image">
+                                        <img src="image/items/item-12.png" alt="exclusive image coming son"
+                                            class="card_img" onclick="changeMainImage(this)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card_top details_image">
+                                        <img src="image/items/item-13.png" alt="exclusive image coming son"
+                                            class="card_img" onclick="changeMainImage(this)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card_top details_image">
+                                        <img src="image/items/item-14.png" alt="exclusive image coming son"
+                                            class="card_img" onclick="changeMainImage(this)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card_top details_image">
+                                        <img src="image/items/item-15.png" alt="exclusive image coming son"
+                                            class="card_img" onclick="changeMainImage(this)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card_top details_image">
+                                        <img src="image/items/item-16.png" alt="exclusive image coming son"
+                                            class="card_img" onclick="changeMainImage(this)">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="product_details_content">
+                <div class="review_section">
+                    <h4>Havic HV G-92 Gamepad</h4>
+                    <div class="review">
+                        <div class="card_ratings review_card_ratings">
+                            <div class="card_stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w_6 h_6">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w_6 h_6">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w_6 h_6">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w_6 h_6">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w_6 h_6">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="card_rating_numbers">(88)</p>
+                            <p class="card_rating_bar">|</p>
+                            <p class="card_rating_stock">In Stock</p>
+                        </div>
+                        <h5 class="review_price">$192.00</h5>
+                        <p class="review_p">PlayStation 5 Controller Skin High quality vinyl with air channel adhesive
+                            for easy bubble free install & mess free removal Pressure sensitive.
+                        </p>
+                    </div>
+                    <div class="color-picker">
+                        <p class="colors">Colors:</p>
+                        <div>
+                            <label for="color-blue">
+                                <input type="radio" id="color-blue" name="color" value="blue" checked>
+                                <span class="color blue"></span>
+                            </label>
+                            <label for="color-red">
+                                <input type="radio" id="color-red" name="color" value="red">
+                                <span class="color red"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="size">
+                        <p>Size:</p>
+                        <div class="size_items">
+                            <input class="size_box" placeholder="XS"></input>
+                            <input class="size_box" placeholder="S"></input>
+                            <input class="size_box" placeholder="M"></input>
+                            <input class="size_box" placeholder="L"></input>
+                            <input class="size_box" placeholder="XL"></input>
+                        </div>
+                    </div>
+                    <div class="review_buttons">
+                        <div class="increment_decrement">
+                            <button class="min">-</button>
+                            <button class="ans">0</button>
+                            <button class="add">+</button>
+                        </div>
+                        <button class="buy">Buy Now</button>
+                        <img src="image/heart.png" alt="exclusive image coming son" class="nav_heart review_heart">
+                    </div>
+                    <div class="delivery_box">
+                        <div class="delivery_box_1">
+                            <img src="image/review/icon-delivery.png" alt="" class="delivery_img_1">
+                            <div class="delivery_box_content">
+                                <h5>Return Delivery</h5>
+                                <p>Free 30 Days Delivery Returns. Details</p>
+                            </div>
+                        </div>
+                        <div class="delivery_box_2">
+                            <img src="image/review/icon-delivery.png" alt="" class="delivery_img_2">
+                            <div class="delivery_box_content">
+                                <h5>Return Delivery</h5>
+                                <p>Free 30 Days Delivery Returns. Details</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- product_details end -->
+
+     <!-- this month start -->
+
+     <section class="section">
+        <div class="container">
+            <div class="section_category">
+                <p class="section_category_p products_details_p">Related Item</p>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="image/items/item-1.png" alt="exclusive image coming son" class="card_img">
+                                <div class="card_top_icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="card_top_icon">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="card_top_icon">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <button date-id="1" date-title="HAVIT HV-G92 Gamepad" date-image="image/items/item-1.png"
+                                data-price="120" class="add_to_cart">Add To
+                                Cart</button>
+                            <div class="card_body">
+                                <h3 class="card_title">HAVIT HV-G92 Gamepad</h3>
+                                <p class="card_price">$120 <del>$160</del></p>
+                                <div class="card_ratings">
+                                    <div class="card_stars">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+
+                                    </div>
+                                    <p class="card_rating_numbers">(88)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="image/items/item-2.png" alt="exclusive image coming son" class="card_img">
+                                <div class="card_top_icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="card_top_icon">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="card_top_icon">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <button date-id="2" date-title="AK-900 Wired Keyboard" date-image="image/items/item-2.png"
+                                data-price="130" class="add_to_cart">Add To
+                                Cart</button>
+                            <div class="card_body">
+                                <h3 class="card_title">AK-900 Wired Keyboard</h3>
+                                <p class="card_price">$130 <del>$145</del></p>
+                                <div class="card_ratings">
+                                    <div class="card_stars">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+
+                                    </div>
+                                    <p class="card_rating_numbers">(70)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="image/items/item-3.png" alt="exclusive image coming son" class="card_img">
+                                <div class="card_top_icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="card_top_icon">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="card_top_icon">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <button date-id="3" date-title="IPS LCD Gaming Monitor" date-image="image/items/item-3.png"
+                                data-price="370" class="add_to_cart">Add to
+                                Cart</button>
+                            <div class="card_body">
+                                <h3 class="card_title">IPS LCD Gaming Monitor</h3>
+                                <p class="card_price">$370 <del>$400</del></p>
+                                <div class="card_ratings">
+                                    <div class="card_stars">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 no_start">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <p class="card_rating_numbers">(75)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="image/items/item-4.png" alt="exclusive image coming son" class="card_img">
+                                <div class="card_top_icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="card_top_icon">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="card_top_icon">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <button date-id="4" date-title="S-Series Comfort Chair" date-image="image/items/item-4.png"
+                                data-price="110" class="add_to_cart">Add to
+                                Cart</button>
+                            <div class="card_body">
+                                <h3 class="card_title">S-Series Comfort Chair</h3>
+                                <p class="card_price">$110 <del>$130</del></p>
+                                <div class="card_ratings">
+                                    <div class="card_stars">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <p class="card_rating_numbers">(65)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="image/items/item-5.png" alt="exclusive image coming son" class="card_img">
+                                <div class="card_top_icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="card_top_icon">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="card_top_icon">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <button date-id="5" date-title="The north coat" date-image="image/items/item-5.png"
+                                data-price="260" class="add_to_cart">Add To Cart</button>
+                            <div class="card_body">
+                                <h3 class="card_title">The north coat</h3>
+                                <p class="card_price">$260 <del>$280</del></p>
+                                <div class="card_ratings">
+                                    <div class="card_stars">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <p class="card_rating_numbers">(79)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="image/items/item-6.png" alt="exclusive image coming son" class="card_img">
+                                <div class="card_top_icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="card_top_icon">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="card_top_icon">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <button date-id="6" date-title="RGB liquid CPU Cooler" date-image="image/items/item-6.png"
+                                data-price="140" class="add_to_cart">Add to
+                                Cart</button>
+                            <div class="card_body">
+                                <h3 class="card_title">RGB liquid CPU Cooler</h3>
+                                <p class="card_price">$140 <del>$160</del></p>
+                                <div class="card_ratings">
+                                    <div class="card_stars">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+
+                                    </div>
+                                    <p class="card_rating_numbers">(48)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="image/items/item-7.png" alt="exclusive image coming son" class="card_img">
+                                <div class="card_top_icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="card_top_icon">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="card_top_icon">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <button date-id="7" date-title="Gucci duffle bag" date-image="image/items/item-7.png"
+                                data-price="117" class="add_to_cart">Add To Cart</button>
+                            <div class="card_body">
+                                <h3 class="card_title">Gucci duffle bag</h3>
+                                <p class="card_price">$117 <del>$128</del></p>
+                                <div class="card_ratings">
+                                    <div class="card_stars">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+
+                                    </div>
+                                    <p class="card_rating_numbers">(77)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="image/items/item-9.png" alt="exclusive image coming son" class="card_img">
+                                <div class="card_top_icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="card_top_icon">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={1.5} stroke="currentColor" class="card_top_icon">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <button date-id="8" date-title="Breed Dry Dog Food" date-image="image/items/item-8.png"
+                                data-price="127" class="add_to_cart">Add To Cart</button>
+                            <div class="card_body">
+                                <h3 class="card_title">Breed Dry Dog Food</h3>
+                                <p class="card_price">$127 <del>$134</del></p>
+                                <div class="card_ratings">
+                                    <div class="card_stars">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 h_6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w_6 no_start">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <p class="card_rating_numbers">(88)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- this month end -->
+
+
+
+    <!-- footer start -->
+
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_item footer_extra">
+                <a href="#" class="footer_logo">Exclusive</a>
+                <h5 class="footer_sub">Subscribe</h5>
+                <div class="footer_p"> Get 10% off your first order. Lorem ipsum dolor sit amet.</div>
+            </div>
+            <div class="footer_item">
+                <h3 class="footer_item_title">
+                    Support
+                </h3>
+                <ul class="footer_list">
+                    <li class="footer_list_item">111 Bijoy sarani, Dhaka, <br> DH 1515, Bangladesh.</li>
+                    <li class="footer_list_item">exclusive@gmail.com</li>
+                    <li class="footer_list_item"> +88015-88888-9999</li>
+                </ul>
+            </div>
+            <div class="footer_item">
+                <h3 class="footer_item_title">
+                    Account
+                </h3>
+                <ul class="footer_list">
+                    <li class="footer_list_item">My Account</li>
+                    <li class="footer_list_item">Login / Register</li>
+                    <li class="footer_list_item">Cart</li>
+                    <li class="footer_list_item">Wishlist</li>
+                    <li class="footer_list_item footer_hide">Shop</li>
+                </ul>
+            </div>
+            <div class="footer_item">
+                <h3 class="footer_item_title">
+                    Quick Link
+                </h3>
+                <ul class="footer_list">
+                    <li class="footer_list_item">Privacy Policy</li>
+                    <li class="footer_list_item">Terms Of Use</li>
+                    <li class="footer_list_item">FAQ</li>
+                    <li class="footer_list_item">Contact</li>
+                </ul>
+            </div>
+            <div class="footer_item footer_hide">
+                <h3 class="footer_item_title">
+                    Join Us
+                </h3>
+                <ul class="footer_list">
+                    <li class="footer_list_item">Join us on Social media</li>
+                    <li class="footer_list_item">
+                        <div class="footer_social_links">
+                            <a href="#" class="social_link"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="social_link"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="social_link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social_link"><i class="fa-brands fa-linkedin-in"></i></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class=" footer_bottom_container">
+                <p class="footer_copy"><i class="fa-regular fa-copyright"></i> Copyright Exclusive 2024. All right
+                    reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer start -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- connect the js file -->
+    <script src="js/product_details.js"></script>
+
+</body>
+
+</html>
