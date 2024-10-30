@@ -6,8 +6,8 @@ E-Commerce-JS is a JavaScript-powered, interactive e-commerce website. The proje
 
 # Installation
 
-- https://github.com/anikmondol/E-Commerce-Js
-- cd E-Commerce-Js
+- https://github.com/anikmondol/EXCLUSIVE-JS
+- cd EXCLUSIVE-JS
 
 
 ## Features
