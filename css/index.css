@@ -58,6 +58,7 @@ ul {
 .mark_to_links p {
     color: var(--color-dark-2);
     font-size: 1.5rem;
+    max-width: 114rem !important;
 }
 
 .mark_to_links p strong {
