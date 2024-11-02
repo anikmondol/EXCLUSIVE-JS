@@ -2,7 +2,7 @@
 
 ## Overview
 
-E-Commerce-JS is a JavaScript-powered, interactive e-commerce website. The project demonstrates the core components of an online shopping platform, including a dynamic product catalog, shopping cart functionality, and checkout simulation—all achieved with HTML, CSS, and JavaScript. This project offers a streamlined e-commerce experience by focusing on frontend functionality using JavaScript for interactivity, SwiperJS for carousels, and ScrollReveal for animations. It aims to deliver a responsive and interactive shopping interface.
+Exclusive is a JavaScript-powered, interactive e-commerce website. The project demonstrates the core components of an online shopping platform, including a dynamic product catalog, shopping cart functionality, and checkout simulation—all achieved with HTML, CSS, and JavaScript. This project offers a streamlined e-commerce experience by focusing on frontend functionality using JavaScript for interactivity, SwiperJS for carousels, and ScrollReveal for animations. It aims to deliver a responsive and interactive shopping interface.
 
 # Installation
 
