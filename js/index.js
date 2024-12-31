@@ -50,7 +50,7 @@ hamburger.addEventListener("click", e =>{
 
 // countdown
 
-let countDownDate = new Date("Jan 1, 2025 15:37:25").getTime();
+let countDownDate = new Date("May 1, 2025 15:37:25").getTime();
 
 // Function to update the countdown
 let x = setInterval(function () {
